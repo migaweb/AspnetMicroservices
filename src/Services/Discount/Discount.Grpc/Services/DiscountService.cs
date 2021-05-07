@@ -34,7 +34,7 @@ namespace Discount.Grpc.Services
           $"Discount with ProductName={request.ProductName} could not be found."));
       }
 
-      _logger.LogInformation("Discount is retrieved for ProductName : {ProductName], Amount: {Amount}", coupon.ProductName, coupon.Amount);
+      _logger.LogInformation("Discount is retrieved for ProductName : {ProductName}, Amount: {Amount}", coupon.ProductName, coupon.Amount);
 
       var couponModel = _mapper.Map<CouponModel>(coupon);
 
