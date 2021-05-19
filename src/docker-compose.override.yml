@@ -46,20 +46,17 @@ services:
   pgadmin:
     container_name: pgadmin
     environment:
-      - PGADMIN_DEFAULT_EMAIL=admin@localhost.com
+      - PGADMIN_DEFAULT_EMAIL=admin@aspnetrun.com
       - PGADMIN_DEFAULT_PASSWORD=admin1234
     restart: always
     ports:
-      - "5050:80"
+        - "5050:80"
     volumes:
-      - pgadmin_data:/root/.pgadmin/
+      - pgadmin_data:/root/.pgadmin
 
   portainer:
     container_name: portainer
     restart: always
-    environment:
-      - ADMIN_USERNAME=admin
-      - ADMIN_PASS=admin1234
     ports:
       - "8080:8000"
       - "9000:9000"
@@ -167,3 +164,25 @@ services:
       - ocelotapigw
     ports:
       - "8006:80"
+
+
+  elasticsearch:
+    container_name: elasticsearch
+    environment:
+      - xpack.monitoring.enabled=true
+      - xpack.watcher.enabled=false
+      - "ES_JAVA_OPTS=-Xms512m -Xmx512m"
+      - discovery.type=single-node
+    ports:
+      - "9200:9200"
+    volumes:
+      - elasticsearch-data:/usr/share/elasticsearch/data
+
+  kibana:
+    container_name: kibana
+    environment:
+      - ELASTICSEARCH_URL=http://elasticsearch:9200
+    depends_on:
+      - elasticsearch
+    ports:
+      - "5601:5601" 
