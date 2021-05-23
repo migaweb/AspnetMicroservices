@@ -45,7 +45,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WebApps", "WebApps", "{F1F4
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AspnetRunBasics", "WebApp\AspnetRunBasics\AspnetRunBasics.csproj", "{1B5A614A-7EB2-42BA-B9A2-ABE4DA57CB97}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Common.Logging", "BuildingBlocks\Common.Logging\Common.Logging.csproj", "{DD203423-189F-4BA4-A1E1-204379572845}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Common.Logging", "BuildingBlocks\Common.Logging\Common.Logging.csproj", "{DD203423-189F-4BA4-A1E1-204379572845}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebStatus", "WebApp\WebStatus\WebStatus.csproj", "{715BED9A-091A-4EFE-B293-A5FE8EA9586A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -109,6 +111,10 @@ Global
 		{DD203423-189F-4BA4-A1E1-204379572845}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DD203423-189F-4BA4-A1E1-204379572845}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DD203423-189F-4BA4-A1E1-204379572845}.Release|Any CPU.Build.0 = Release|Any CPU
+		{715BED9A-091A-4EFE-B293-A5FE8EA9586A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{715BED9A-091A-4EFE-B293-A5FE8EA9586A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{715BED9A-091A-4EFE-B293-A5FE8EA9586A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{715BED9A-091A-4EFE-B293-A5FE8EA9586A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -131,6 +137,7 @@ Global
 		{D64BA9CB-F3ED-4831-855A-E2D698FDD7E9} = {599762B3-C387-4CB8-9B02-FC9FD872DCCB}
 		{1B5A614A-7EB2-42BA-B9A2-ABE4DA57CB97} = {F1F42199-C152-43D1-A46A-EE5B17FF9FF5}
 		{DD203423-189F-4BA4-A1E1-204379572845} = {63E2144F-A6D5-40E2-9A94-AC3AE09BA079}
+		{715BED9A-091A-4EFE-B293-A5FE8EA9586A} = {F1F42199-C152-43D1-A46A-EE5B17FF9FF5}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {B3D97353-1A0A-4C22-B033-F46A374F3289}
